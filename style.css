@@ -350,10 +350,10 @@ FEATURES ↓
 
 .feature {
     width: calc(100% / 3);
-    padding: 32px 24p; 
+    padding: 32px 24px; 
 }
 
-.features__row {
+.feature__row {
   display: flex;
   align-items: flex-start;
 }
@@ -365,7 +365,7 @@ FEATURES ↓
     border-radius: 50%;
 }
 
-.feature--img {
+.feature__img {
     display: block;
     width: 24px;
     height: 24px;
