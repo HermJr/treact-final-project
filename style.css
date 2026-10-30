@@ -529,16 +529,12 @@ STEPS ↓
 }
 
 .steps__description {
+  width: 100%;
+  max-width: 448px;
   padding: 32px 0;
-  padding-left: 64px;
-  width: 50%;
-}
-
-.steps__description {
-  display: flex;
-  flex-direction: column;
-  margin-left: 24px;
-  max-width: 320px;
+  margin-top: 64px;
+  text-align: center;
+  padding-left:64px;
 }
 
 .steps__list {
