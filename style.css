@@ -75,7 +75,8 @@ main {
 .section__title {
     font-size: 48px;
     font-weight: 900;
-    line-height: 1.5;margin: 16px;
+    line-height: 1.5;
+    margin: 16px 0;
     letter-spacing: 0.025em;
 }
 
@@ -289,9 +290,9 @@ HEADER / ABOUT US ↓
 }
 
 .header__description--para {
-  margin: 20px 0;
+  margin: 32px 0;
   max-width: 1200px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .header__email {
@@ -348,7 +349,7 @@ HEADER / ABOUT US ↓
 }
 
 .header__customers--title {
-  margin-top: 48px;
+  margin-top: 80px;
   color: #a0aec0;
   font-size: 12px;
   font-weight: 700;
@@ -363,11 +364,13 @@ HEADER / ABOUT US ↓
 
 .header__img--wrapper {
   width: calc(100% - 40%);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .header__img {
   width: 100%;
-  max-width: 512px;
+  max-width: 768px;
 }
 
 /* 
@@ -376,10 +379,31 @@ FEATURES ↓
 
 */
 
+#features .row__narrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features {
+  width: 100%;
+  margin-top: 40px;
+}
+
+#features .section__title {
+  text-align: center;
+}
+
+#features .section__para {
+  text-align: center;
+  max-width: 576px;
+}
+
 .features {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 40px;
 }
 
 .feature {
@@ -409,6 +433,13 @@ FEATURES ↓
     margin-left: 16px;
     margin-top: 8px;
 }
+.feature__para {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #7c8ba1;
+  line-height: 2;
+  font-weight: 500;
+}
 
 /* 
 
@@ -433,14 +464,13 @@ section {
     position: absolute;
     right: 0px;
     bottom: 0px;
-    --tw-text-opacity: |1;
-    fill: #6415ff
+    fill: #6415ff;
     z-index: 0; 
     display: block;
 }
 
 .quality__description,
-.quality__image--wrapper {
+.quality__img--wrapper {
     width: 50%;
 }
 
@@ -450,10 +480,13 @@ section {
 }
 
 
-.quality__image--wrapper {
+.quality__img--wrapper {
     border-radius: 4px;
     border: 1px solid rgb(229, 231, 235);
     position: relative;
+    margin: 0 56px;
+    z-index: 2;
+    display: flex;
 }
 
 .quality__img {
@@ -475,11 +508,67 @@ STEPS ↓
 
 */
 
+.step__title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
+}
+
 #steps .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+ 
+.steps__description {
+  padding: 32px 0;
+  padding-left: 64px;
+}
+
+.steps__description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  max-width: 320px;
+}
+ 
+.steps__list {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #243e63;
+}
+
+.steps__img--wrapper {
+  display: flex;
+  position:relative;
+  width: 50%;
+  ;
+}
+
+.step__para {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
 
 /* 
 
