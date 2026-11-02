@@ -50,7 +50,7 @@ img {
 .row__narrow {
   width: 100%;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: ;
 }
 
 .container {
@@ -534,7 +534,7 @@ STEPS ↓
   padding: 32px 0;
   margin-top: 64px;
   text-align: left;
-  padding-left:64px;
+  padding-left: 64px;
   margin-left: 24px;
 }
 
@@ -559,8 +559,8 @@ STEPS ↓
 .steps__grid {
   height: 5rem;
   width: 5rem;
-  bottom:-50px;
-  position: absolute; 
+  bottom: -50px;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.8;
@@ -576,7 +576,6 @@ STEPS ↓
   font-weight: 700;
   text-transform: uppercase;
 }
-
 
 .step__para {
   font-size: 14px;
@@ -626,7 +625,7 @@ VALUES ↓
   margin-left: 12px;
   font-size: 20px;
   font-weight: bold;
-  color:#243e63
+  color: #243e63;
 }
 
 .values__list {
@@ -650,8 +649,7 @@ VALUES ↓
   align-items: center;
 }
 
-.value:nth-child(1)
-.value__img--wrapper {
+.value:nth-child(1) .value__img--wrapper {
   background-color: #9ae6b4;
 }
 
@@ -663,7 +661,7 @@ VALUES ↓
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 36px;
   height: 36px;
 }
@@ -689,9 +687,6 @@ VALUES ↓
   cursor: pointer;
 }
 
-
-
-
 /*
 
 PRICING ↓
@@ -713,25 +708,27 @@ PRICING ↓
 }
 
 .plan {
-    position: relative;
-    margin-top: 4rem;
-    display: flex;
-    width: 100%;
-    max-width: 24rem;
-    flex-direction: column;
-    border-radius: 0.5rem;
-    background-color: rgb(255 255 255);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    text-align: center;
-    color: rgb(26 32 44);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  position: relative;
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  max-width: 24rem;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  background-color: rgb(255 255 255);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  color: rgb(26 32 44);
+  box-shadow:
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.plan:nth-child(odd)
-.plan__name {
+.plan:nth-child(odd) .plan__name {
   color: #1a202c;
 }
 
@@ -741,13 +738,13 @@ PRICING ↓
   line-height: 1.625;
 }
 
-.plan:nth-child(1)
-.plan__stripe {
+.plan:nth-child(1) .plan__stripe {
   color: #f7fafc;
   background: linear-gradient(
     115deg,
     rgb(56, 178, 172) 0%,
-    rgb(129, 230, 217) 100%);
+    rgb(129, 230, 217) 100%
+  );
 }
 
 .plan__stripe {
@@ -776,8 +773,7 @@ PRICING ↓
   line-height: 1.625;
 }
 
-.plan:nth-child(odd)
-.plan__duration {
+.plan:nth-child(odd) .plan__duration {
   color: #a0aec0;
 }
 
@@ -788,8 +784,7 @@ PRICING ↓
   line-height: 1.625;
 }
 
-.plan:nth-child(1)
-.plan__middle {
+.plan:nth-child(1) .plan__middle {
   border-top: 2px solid rgb(229 231, 235);
   border-bottom: 2px solid rgb(229 231, 235);
 }
@@ -799,7 +794,7 @@ PRICING ↓
   margin-right: -2rem;
   display: flex;
   flex: 1 1 0%;
-  flex-direction: column; 
+  flex-direction: column;
   padding: 2rem;
 }
 
@@ -831,30 +826,30 @@ PRICING ↓
 }
 
 .plan__button {
-    background: linear-gradient(
+  background: linear-gradient(
     115deg,
     rgb(56, 178, 172) 0%,
-    rgb(129, 230, 217) 100%);
-    max-width: none;
-    padding: 0.75rem 2rem;
-    font-weight: 700;
-    transition: all 300ms ease;
-    color:rgb(247 250 252);
-    width: 100%;
-    border-radius: 9999px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 0.875rem;
-    letter-spacing: 0.05em;
+    rgb(129, 230, 217) 100%
+  );
+  max-width: none;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  transition: all 300ms ease;
+  color: rgb(247 250 252);
+  width: 100%;
+  border-radius: 9999px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
 }
 
 buttun {
-   cursor: pointer;
+  cursor: pointer;
   border: none;
 }
 
-.plan:nth-child(2)
-.plan__price {
+.plan:nth-child(2) .plan__price {
   color: #f7fafc;
   font-size: 48px;
   margin: 4px 0;
@@ -862,8 +857,7 @@ buttun {
   line-height: 1.625;
 }
 
-.plan:nth-child(2)
-.plan__target {
+.plan:nth-child(2) .plan__target {
   color: #f7fafc;
 }
 
@@ -873,9 +867,6 @@ buttun {
   line-height: 1.5;
   letter-spacing: 0.025em;
 }
-
-
-
 
 /* 
 
