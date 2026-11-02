@@ -50,7 +50,7 @@ img {
 .row__narrow {
   width: 100%;
   max-width: 1024px;
-  margin: ;
+  margin: 0 auto;
 }
 
 .container {
@@ -290,12 +290,15 @@ HEADER / ABOUT US ↓
 
 .header__row {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__description {
+  text-align: center;
   width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__description--para {
