@@ -113,7 +113,9 @@ main {
 
 NAVBAR ↓
 
-*/
+*/ 
+
+
 
 nav {
   display: flex;
@@ -720,11 +722,12 @@ PRICING ↓
 }
 
 .plans {
-  flex-direction: row;
-  align-items: center;
-  display: flex;
   position: relative;
-  justify-content: space-between;
+  margin-left: 65%;
+  width: 100%;
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between; 
 }
 
 .plan {
@@ -756,9 +759,7 @@ PRICING ↓
   color: #243e63;
 }
 
-.plan:nth-child(1)
-.plan__stripes
- {
+.plan:nth-child(1) .plan__stripes {
   color: #f7fafc;
   background: linear-gradient(
     115deg,
@@ -832,7 +833,7 @@ PRICING ↓
   max-width: none;
 }
 
-.plan__button  {
+.plan__button {
   padding: 0.75rem 2rem;
   font-weight: 700;
   transition: all 300ms ease;
@@ -845,7 +846,6 @@ PRICING ↓
   letter-spacing: 0.05em;
   background-color: #feb2b2;
 }
-
 
 .plan:nth-child(2) .plan__price {
   font-size: 48px;
@@ -865,8 +865,11 @@ PRICING ↓
   letter-spacing: 0.025em;
 }
 .plan__bottom {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: none;
 }
 
 /* 
@@ -926,6 +929,10 @@ MOBILE RESPONSIVENESS ↓
   }
   footer {
     padding: 80px 32px;
+  }
+  plans {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
