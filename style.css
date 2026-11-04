@@ -109,8 +109,6 @@ main {
   cursor: pointer;
 }
 
-
-
 /* 
 
 NAVBAR ↓
@@ -651,16 +649,15 @@ VALUES ↓
 
 .value:nth-of-type(1) {
   margin-top: 32px;
-  margin-bottom: 32px;
-} 
+  margin-right: 32px;
+}
 
 .value__title {
   display: flex;
   align-items: center;
 }
 
-.value:nth-child(1) 
- .value__img--wrapper { 
+.value:nth-child(1) .value__img--wrapper {
   background-color: #9ae6b4;
 }
 
@@ -706,10 +703,18 @@ PRICING ↓
 
 */
 
-#pricing .row {
+.pricing .row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 80px;
+}
+
+.pricing .section__para {
+  max-width: 576px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #7c8ba1;
+  line-height: 1.625;
 }
 
 .plans {
@@ -722,26 +727,14 @@ PRICING ↓
 
 .plan {
   position: relative;
-  margin-top: 4rem;
-  display: flex;
+  display: flex-box;
   width: 100%;
   max-width: 24rem;
-  flex-direction: column;
-  border-radius: 0.5rem;
-  background-color: rgb(255 255 255);
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  text-align: center;
-  color: rgb(26 32 44);
-  box-shadow:
-    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.plan:nth-child(odd) .plan__name {
+.plan:nth-child(odd) {
   color: #1a202c;
 }
 
@@ -749,9 +742,13 @@ PRICING ↓
   font-size: 20px;
   font-weight: bold;
   line-height: 1.625;
+  display: flex;
+  position: relative;
+  align-items: center;
+  color: #243e63;
 }
 
-.plan:nth-child(1) .plan__stripe {
+.plan:nth-child(1) {
   color: #f7fafc;
   background: linear-gradient(
     115deg,
@@ -776,7 +773,7 @@ PRICING ↓
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-transform: uppercase;
-  line-height: 1.625;
+  line-height: 1.6;
 }
 
 .plan__price {
@@ -784,10 +781,7 @@ PRICING ↓
   margin: 4px 0;
   font-weight: bold;
   line-height: 1.625;
-}
-
-.plan:nth-child(odd) .plan__duration {
-  color: #a0aec0;
+  color: #1a202c;
 }
 
 .plan__duration {
@@ -795,75 +789,55 @@ PRICING ↓
   letter-spacing: 0.1em;
   font-weight: bold;
   line-height: 1.625;
-}
-
-.plan:nth-child(1) .plan__middle {
-  border-top: 2px solid rgb(229 231, 235);
-  border-bottom: 2px solid rgb(229 231, 235);
+  color: #a0aec0;
 }
 
 .plan__middle {
+  border-top: 2px solid rgb(229 231, 235);
+  border-bottom: 2px solid rgb(229 231, 235);
   margin-left: -2rem;
   margin-right: -2rem;
   display: flex;
-  flex: 1 1 0%;
   flex-direction: column;
   padding: 2rem;
 }
 
 .plan__target {
-  color: #1a202c;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.025em;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  padding: 0;
-  margin: 0;
 }
 
 .plan__feature {
   margin-top: 20px;
   font-weight: 500;
-  color: #718096;
   font-size: 16px;
   line-height: 1.5;
+  margin: right;
 }
 
-.plan__button {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.plan__button {
-  background: linear-gradient(
-    115deg,
-    rgb(56, 178, 172) 0%,
-    rgb(129, 230, 217) 100%
-  );
+.plan__button .plan:nth-child(2) {
+  background-color: #6415ff;
   max-width: none;
+}
+
+.plan__button  {
   padding: 0.75rem 2rem;
   font-weight: 700;
   transition: all 300ms ease;
-  color: rgb(247 250 252);
   width: 100%;
   border-radius: 9999px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-size: 0.875rem;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
+  background-color: #feb2b2;
 }
 
-buttun {
-  cursor: pointer;
-  border: none;
-}
 
 .plan:nth-child(2) .plan__price {
-  color: #f7fafc;
   font-size: 48px;
   margin: 4px 0;
   font-weight: bold;
@@ -879,6 +853,10 @@ buttun {
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.025em;
+}
+.plan__bottom {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 /* 
