@@ -786,12 +786,12 @@ PRICING ↓
   border-top-right-radius: 0.5rem;
 }
 
-.plan:nth-child(1),
-.plan:nth-child(2),
-.plan:nth-child(3), {
+.plan:nth-child(1)
+.plan:nth-child(2)
+.plan:nth-child(3) {
   border-top: 2px solid rgb(102, 216, 234);
-
 }
+
 .plan__top {
   display: flex;
   flex-direction: column;
@@ -830,6 +830,8 @@ PRICING ↓
   flex: 1 1 0%;
   flex-direction: column;
   padding: 2rem;
+  border-top: 2px solid #edf2f7;
+  border-bottom: 2px solid #edf2f7;
 }
 
 .plan:nth-child(even) .plan__name,
@@ -1040,7 +1042,7 @@ TESTIMONIALS
   line-height: 1.5;
 }
 
-.testimonial__button {
+.testimonial__buttons {
   display: flex;
   align-items: center;
 }
@@ -1244,7 +1246,6 @@ footer {
   font-weight: 700;
   color: #f7fafc;
   line-height: 1.5;
-  padding: 
 }
 
 .footer__column--link {
@@ -1265,7 +1266,7 @@ a {
 
 .footer__divider {
   width: 100%;
-  height: 0;
+  height: 1;
   margin: 64px 0;
   background: rgb(116, 44, 255);
 }
@@ -1288,7 +1289,7 @@ a {
 
 .footer__logo--text {
   font-size: 20px;
-  color: #f7fafc
+  color: #f7fafc;
   font-weight: 900;
   margin-left: 8px;
   letter-spacing: 0.05em;
