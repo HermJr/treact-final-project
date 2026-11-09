@@ -1005,6 +1005,7 @@ TESTIMONIALS
 .testimonial__bottom {
   display: flex;
   justify-content: space-between;
+  margin-top: 32px;
 }
 
 .testimonial__profile {
@@ -1138,6 +1139,7 @@ START / CALL TO ACTION ↓
 .start__title,
 .start__buttons {
   width: 50%;
+  text-align: right;
 }
 
 .start__button:nth-child(2) {
@@ -1145,9 +1147,9 @@ START / CALL TO ACTION ↓
   transition: all 300ms ease;
 }
 
-.start__:hover:nth-child(2) {
-  background-color: rgba(247, 250, 252);
-  color: rgba(100, 21, 255);
+.start__button:hover:nth-child(2) {
+  background-color: rgb(247, 250, 252);
+  color: rgb(100, 21, 255);
 }
 
 .start__button:nth-child(1) {
@@ -1329,6 +1331,11 @@ h5 {
   transition: all 300ms ease;
 }
 
+.footer__social--link svg {
+  width: 16px;
+  height: 16px;
+}
+
 .start__button:hover:nth-child(1) {
   background-color: rgba(229, 62, 62);
 }
@@ -1348,7 +1355,7 @@ h5 {
   border: 1px solid rgb(160, 174, 192);
   transition: all 300ms ease;
   background-color: transparent;
-  color: #f7fafc
+  color: #f7fafc;
 }
 
 .start__button {
