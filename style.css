@@ -1594,4 +1594,28 @@ MOBILE RESPONSIVENESS ↓
   .testimonial__buttons {
     margin-top: 32px;
   }
+
+  .testimonial__img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .section__title {
+    text-align: center;
+  }
+
+  .values__title {
+    justify-content: center;
+  }
+
+  .value {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonial__para {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
 }
